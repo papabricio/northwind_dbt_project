@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    columns:
+      - name: sk_customers
+        tests:
+          - unique
+          - not_null
+          
+  - name: dim_fornecedor
+    columns:
+      - name: sk_supplier
+        tests:
+          - unique
+          - not_null
+          
+  - name: dim_funcionarios
+    columns:
+      - name: sk_employee
+        tests:
+          - unique
+          - not_null
